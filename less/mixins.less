@@ -1,9 +1,8 @@
 // Mixins in here
 
-.mybtn(@text-color: black, @border: Blue, @hov-textc, @hov-bordc, @hov-bgcolor ) {
+.mybtn(@text-color: black, @bg-color: blue, @hov-textc, @hov-bgcolor ) {
     display: inline-block;
-    padding: 0.5rem 3rem;
-    border: @border;
+    padding: 1.5rem 3rem;
     border-radius: 20px;
     margin: 0 0.3rem 0.3rem 4rem;
     box-sizing: border-box;
@@ -12,6 +11,7 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: @text-color;
+    background-color: @bg-color;
     text-align: center;
     transition: all 0.15s;
 
@@ -23,7 +23,6 @@
 
     &:hover {
         color: @hov-textc;
-        border-color: @hov-bordc;
         background-color: @hov-bgcolor;
         cursor: pointer;
     }

@@ -220,6 +220,7 @@ img {
   .home .content-section {
     justify-content: center;
     flex-direction: column;
+    padding: 0rem 1.5rem;
   }
 }
 .home .content-section .text-content {
@@ -253,6 +254,7 @@ img {
     display: flex;
     justify-content: center;
     flex-direction: column-reverse;
+    padding: 0rem 1.5rem;
   }
 }
 .home .inverse-content .text-content {
@@ -271,6 +273,7 @@ img {
 @media (max-width: 500px) {
   .home .content-destination {
     width: 100%;
+    padding: 0rem 1.5rem;
   }
 }
 .home .content-destination img {
@@ -301,8 +304,7 @@ img {
 }
 .home .content-pick .destination .btn {
   display: inline-block;
-  padding: 0.5rem 3rem;
-  border: 0.16em solid black;
+  padding: 1.5rem 3rem;
   border-radius: 20px;
   margin: 0 0.3rem 0.3rem 4rem;
   box-sizing: border-box;
@@ -310,7 +312,8 @@ img {
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  color: turquoise;
+  color: White;
+  background-color: #25A4BB;
   text-align: center;
   transition: all 0.15s;
 }
@@ -323,7 +326,6 @@ img {
 }
 .home .content-pick .destination .btn:hover {
   color: white;
-  border-color: #DDDDDD;
   background-color: black;
   cursor: pointer;
 }
