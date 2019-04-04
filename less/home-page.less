@@ -1,11 +1,23 @@
 .home {
 
   header {
-    border: solid red;
+
+    img {
+      margin-bottom: 0rem;
+
+      @media @mobile {
+        margin-bottom: 2rem;
+      }
+
+    }
+
+    @media @mobile {
+      padding: 0rem 1.5rem;
+    }
+
   }
 
   .content-section {
-    border: solid red;
     margin: 3rem 0;
     display: flex;
     flex-wrap: wrap;
@@ -14,7 +26,9 @@
     @media @mobile {
       justify-content: center;
       flex-direction: column;
-      padding: 0rem 1.5rem;
+      border-top: dashed;
+      border-width: .1rem;
+      padding: 3rem 1.5rem;
     }
 
 
@@ -43,7 +57,6 @@
   }
 
   .inverse-content {
-    border: solid red;
     padding-bottom: 3rem;
     border-bottom: 2px dashed @navigation-border;
 
@@ -53,6 +66,9 @@
       justify-content: center;
       flex-direction: column-reverse;
       padding: 0rem 1.5rem;
+      padding-bottom: 3rem;
+      border-top: none;
+
     }
 
     .text-content {
@@ -67,7 +83,6 @@
   }
 
   .content-destination {
-    border: solid red;
     width: 75%;
     margin: 0 auto 3rem;
 
@@ -85,7 +100,6 @@
   }
 
   .content-pick {
-    border: solid red;
     padding-top: 3rem;
     border-top: 2px dashed @navigation-border;
     display: flex;
